@@ -8,6 +8,7 @@ void Proba(int num, int num1)
     {
         double pow = Math.Pow(num, num1);
         int otv = Convert.ToInt32(pow);
+        Console.WriteLine(otv);
     }
     else
     {

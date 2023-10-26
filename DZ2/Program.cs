@@ -15,7 +15,21 @@ int result = 0;
         result++;
     }
     
+    
     return result;
+    
 }
 int digit = Digits(num);
-Console.WriteLine(digit);
+
+
+int Sum(int num, int digit)
+{
+int sum = 0;
+for (int i = 1; i <= digit; i++)
+{
+sum += num % 10; //складываем остатки
+num /= 10;
+}
+return sum;
+}
+Console.Write($"Сумма равна: {Sum(num,digit)}");
